@@ -1,0 +1,115 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+
+    @media only screen and (min-width: 750px) {
+        /* For desktop */
+        .popup {
+
+            .center {
+                width: 65%;
+
+                .body {
+
+                    .container {
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        /* For tablets */
+        .popup {
+
+            .center {
+                width: 100%;
+
+                .body {
+
+                    .container {
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .popup {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: rgba(0,0,0,0.2);
+        text-align: center;
+
+        .center {
+            max-width: 850px;
+            min-width: 320px;
+            margin: 0 auto;
+            position: fixed;
+            // transform: translate(-50%, -50%);
+            // top: 50%;
+            // left: 50%;
+            box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
+
+            .header {
+                height: 38px;
+                position: relative;
+                -webkit-user-select: none;
+                -html-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                user-select: none;
+                direction: rtl;
+                text-align: right;
+
+                img {
+                    margin-right: 10px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+
+            .body {
+                width: 100%;
+                overflow: auto;
+                max-height: calc(100vh - 38px); // IMPOTANT to have height to overflow work
+                background-color: nb-theme(background-basic-color-1);
+                // border: solid 3px #e9e9e9;
+                border-top: none;
+                direction: ltr;
+
+                .container {
+                    width: 100%;
+                    padding: 0;
+                    max-width: none;
+                }
+            }
+
+            .glass {
+                backdrop-filter: contrast(105%) brightness(98%) blur(2px);
+                background: radial-gradient( ellipse at 16.7% -10%, hsla(0, 0%, 100%, 0.44) 24%, hsla(0, 0%, 100%, 0.4) 25%, hsla(0, 0%, 100%, 0.2) 45%, hsla(0, 0%, 100%, 0.1) );
+                background-size: 150% 100%;
+            }
+
+
+            .box {
+                background-clip: padding-box; /* Background stops at border */
+                border: 6px solid rgba(255,255,255,.12);
+                border-top: none;
+                // -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+                // -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+                // -khtml-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+                // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

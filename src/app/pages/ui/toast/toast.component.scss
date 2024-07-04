@@ -1,0 +1,130 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+
+	@media only screen and (min-width: 575px) {
+
+		.toast {
+			width: 460px;
+			max-height: 170px;
+		}
+	}
+
+	@media only screen and (max-width: 575px) {
+
+		.toast {
+			width: 320px;
+			max-height: 150px;
+		}
+	}
+
+
+	.toast {
+		visibility: hidden;
+		background-color: nb-theme(toast-background-color);
+		border-radius: 11px;
+		position: fixed;
+		z-index: 99999;
+		bottom: 25px;
+		right: 15px;
+		-webkit-filter: drop-shadow(0px 0px 1px nb-theme(button-shadow-color));
+		filter: drop-shadow(0px 0px 1px nb-theme(toast-shadow-color));
+		cursor: pointer;
+		min-height: 115px;
+
+		.body-toast {
+			margin: 12px 20px;
+
+			.header-toast {
+				margin: 0 -10px;
+
+				.img-container {
+					display: inline;
+					-webkit-filter: drop-shadow(0px 0px 1px #696969);
+					filter: drop-shadow(0px 0px 1px #696969);
+					margin-bottom: 6px;
+
+					img {
+						width: 27px;
+						height: 27px;
+					}
+				}
+
+				b {
+					color: nb-theme(button-text-color);
+					font-family: var(--global-font);
+					margin: 0 8px;
+				}
+			}
+
+			p {
+				display: inline-block;
+				margin-top: 3px;
+				color: nb-theme(button-text-color);
+				font-family: var(--global-font);
+			}
+		}
+
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	.show {
+		visibility: visible;
+		// -webkit-animation: in 0.3s, out 0.3s 3.7s;
+		// animation: in 0.3s, out 0.3s 3.7s;
+		animation: in 0.25s ease normal, out 0.25s ease 3.75s normal;
+		-webkit-animation: in 0.25s ease normal, out 0.25s ease 3.75s normal;
+	}
+
+	.error {
+		// background-color: #f03853;
+		background-color: rgba(247, 54, 83, 0.7);
+		-webkit-filter: drop-shadow(0px 0px 1px #ff0023);
+		filter: drop-shadow(0px 0px 1px #ff0023);
+	}
+
+	.warning {
+		background-color: #fa8822;
+		-webkit-filter: drop-shadow(0px 0px 1px #ff7e00);
+		filter: drop-shadow(0px 0px 1px #ff7e00);
+	}
+
+	.success {
+		// background-color: #38c64c;
+		background-color: rgba(38, 220, 64, 0.7);
+		-webkit-filter: drop-shadow(0px 0px 1px #01e917);
+		filter: drop-shadow(0px 0px 1px #01e917);
+	}
+
+	@keyframes in {
+		from {
+			bottom: 15px;
+			right: 0;
+			opacity: 0.1;
+		}
+
+		to {
+			bottom: 25px;
+			right: 15px;
+			opacity: 1;
+		}
+	}
+
+	@keyframes out {
+		from {
+			bottom: 25px;
+			right: 15px;
+			opacity: 1;
+		}
+
+		to {
+			bottom: 15px;
+			right: 0;
+			opacity: 0;
+		}
+	}
+}

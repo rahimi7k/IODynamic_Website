@@ -1,0 +1,27 @@
+<div class="help">
+
+	<section class="dialog-outer">
+		<div class="dialog">
+			<header style="text-align:center;vertical-align:middle;">
+				<img class="logo" src="assets/images/5c6a665012e1.png"/>
+			</header>
+
+			<div class="dialog-main">
+
+				<form id="login-form" class="adjacent" onsubmit="event.preventDefault(); return false;">
+					<!--<input type="hidden" name="csrfmiddlewaretoken" value="nICzGzcZsZlF1gz62giUfPIyb4OuCr1l">-->
+					<p><label for="id_username">Username:</label> <input autocapitalize="off" autocorrect="off" id="id_username" maxlength="75" name="username" type="text"></p>
+					<p><label for="id_password">Password:</label> <input autocapitalize="off" autocorrect="off" id="id_password" type="password"></p>
+					<p class="form-actions">
+
+						<a href="https://www.instagram.com/accounts/password/reset/" target="_blank">Forgot password?</a>
+						<input type="submit" class="button-green" id="button-green" value="Log in" (click)="help()">
+					</p>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<div id="reactModalMountPoint"></div>
+</div>

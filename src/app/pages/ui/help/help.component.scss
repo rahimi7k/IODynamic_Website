@@ -1,0 +1,803 @@
+.rtl {
+	direction: ltr;
+	text-align: left;
+}
+
+
+@font-face {
+	font-family: "SansSerif";
+	src: url("../../../../assets/fonts/sans-serif.otf");
+}
+
+.help {
+	max-width: 402px;
+	margin: 0 auto;
+	direction: ltr;
+	text-align: left;
+
+
+	* {
+		direction: ltr;
+		text-align: left;
+	}
+
+	input[type=submit],
+	input.submit {
+		font-weight: bold;
+		width: auto !important;
+	}
+
+	form p {
+		margin-bottom: 10px;
+		font-family: "SansSerif";
+		color: #000000;
+	}
+
+	label {
+		display: block;
+	}
+
+	input,
+	select,
+	textarea {
+		border: 1px solid #ccc;
+		padding: 9px 8px 7px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		border-radius: 3px;
+		box-shadow: "inset 0 1px 1px rgba(0,0,0,0.05)";
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus {
+		border-color: #a4baca !important;
+		background: #f5f7f9;
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus {
+		border-color: #999;
+	}
+
+	select {
+		padding: 2px;
+	}
+
+	input[type=file] {
+		padding: 2px;
+		border: none;
+		box-shadow: none;
+	}
+
+	label {
+		font-weight: bold;
+	}
+
+	.form-checkbox > span label span,
+	.form-radio > span label span {
+		padding-left: 10px;
+	}
+
+	.form-checkbox > span label span,
+	.form-radio > span label span {
+		font-weight: normal;
+	}
+
+	body {
+		line-height: 20px;
+		color: #222;
+	}
+
+
+	h1 {
+		font-size: 36px;
+		line-height: 40px;
+		font-weight: 600;
+		font-weight: bold;
+		margin: 40px 0 20px -1px;
+	}
+
+
+	h1:first-child, h2:first-child {
+		margin-top: 0;
+	}
+
+	p {
+		margin: 0 0 10px;
+	}
+
+	form input, form select, form textarea {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+
+	a, a:visited {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a, a:visited {
+		color: #3f729b;
+	}
+
+	a:hover {
+		color: #1c5380;
+	}
+
+	p.emphasized {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 25px;
+	}
+
+	a {
+		-webkit-tap-highlight-color: rgba(63, 114, 155, 0.3);
+	}
+
+	input[type=text] {
+		-webkit-appearance: none;
+	}
+
+	textarea {
+		padding: 7px 7px 6px;
+	}
+
+
+	[type=submit],
+	.button,
+	.button-light, [type=submit]:visited,
+	.button:visited,
+	.button-light:visited {
+		color: #0f3556;
+	}
+
+	[type=submit]:hover,
+	.button:hover,
+	.button-light:hover {
+		color: #062540;
+	}
+
+	.button-green, .button-green:visited, .button-green:hover {
+		color: #fff;
+	}
+
+	.ButtonActive.button-green, .ButtonActive.button-altgreen, html.touch .pressed.button-green {
+		color: rgba(255, 255, 255, 0.8);
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	}
+
+	.button-disabled, .button-disabled:visited {
+		color: silver;
+	}
+
+	.button-disabled:hover {
+		color: silver;
+	}
+
+
+	[type=submit],
+	.button,
+	.button-light,
+	.button-disabled,
+	.button-grey {
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 1px 0 0 rgba(255, 255, 255, 0.05), inset -1px 0 0 rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	}
+
+
+	.button-green {
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 1px 0 0 rgba(255, 255, 255, 0.05), inset -1px 0 0 rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	}
+
+
+	.ButtonActive.button-green,
+	.button-active.button-green,
+	.active.button-green,
+	.button-green:active,
+	.pressed.button-green {
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
+	}
+
+
+
+	.button-green {
+		background-color: #6bb38a;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#6bb38a), to(#3d8b5f));
+		background-image: -webkit-linear-gradient(top, #6bb38a, #3d8b5f);
+		background-image: -moz-linear-gradient(top, #6bb38a, #3d8b5f);
+		background-image: -o-linear-gradient(top, #6bb38a, #3d8b5f);
+		background-image: -ms-linear-gradient(top, #6bb38a, #3d8b5f);
+		background-image: linear-gradient(to bottom, #6bb38a, #3d8b5f);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#6bb38a', EndColorStr='#3d8b5f');
+		background-position: 50% 50%;
+		text-shadow: 0 1px 1px #1e693f;
+	}
+
+	.ButtonActive.button-green, .button-active.button-green, .active.button-green, .button-green:active,
+	html.touch .pressed.button-green {
+		background: #3a845a;
+	}
+
+	.button-green {
+		border: 1px solid #3d8b5f;
+	}
+
+	.ButtonActive.button-green, .button-active.button-green, .active.button-green, .button-green:active,
+	html.touch .pressed.button-green {
+		border-color: #2d6847;
+	}
+
+	.button-altgreen {
+		background-color: #47bc60;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#47bc60), to(#39a64e));
+		background-image: -webkit-linear-gradient(top, #47bc60, #39a64e);
+		background-image: -moz-linear-gradient(top, #47bc60, #39a64e);
+		background-image: -o-linear-gradient(top, #47bc60, #39a64e);
+		background-image: -ms-linear-gradient(top, #47bc60, #39a64e);
+		background-image: linear-gradient(to bottom, #47bc60, #39a64e);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#47bc60', EndColorStr='#39a64e');
+		background-position: 50% 50%;
+		text-shadow: 0 1px 1px #2c803c;
+	}
+
+	.ButtonActive.button-altgreen, .button-active.button-altgreen, .active.button-altgreen, .button-altgreen:active,
+	html.touch .pressed.button-altgreen {
+		background: #369e4a;
+	}
+
+	.button-altgreen {
+		border: 1px solid #329345;
+	}
+
+
+	.img {
+		position: relative;
+		display: inline-block;
+	}
+
+	.img b {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.img img {
+		display: block;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+		span.img-outset {
+			box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+
+	.dialog-outer {
+		position: relative;
+		min-height: 100%;
+	}
+
+
+	@media screen and (max-width: 990px) {
+		body, .root {
+			width: 100%;
+		}
+
+		.wrapper {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.account-state {
+			right: 0;
+		}
+
+		.account-state ul {
+			border-right-width: 0;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.account-state .link-signin > a strong,
+		.account-state .link-profile > a strong {
+			display: none;
+		}
+
+		.account-state a {
+			padding-bottom: 12px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.top-bar .wrapper {
+			padding: 0 9px;
+		}
+	}
+
+	@-webkit-keyframes
+
+	'fade-in' {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-o-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes
+
+	'fade-in' {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.mobileAvatarImage img {
+		height: 100%;
+		visibility: hidden;
+		width: auto;
+	}
+
+	body.oauth-authorize,
+	body.oauth-login,
+	.p-dialog {
+		background: url("996e767332d3.png") repeat 0 0;
+	}
+
+	.dialog-404 .dialog-main {
+		text-align: center;
+	}
+
+	.dialog h1 {
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.oauth-login .cta {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.oauth-login .cta a {
+		font-weight: bold;
+	}
+
+	@media screen and (max-width: 402px) {
+		.authorize-list {
+			font-size: 12px;
+		}
+	}
+
+
+
+	.p-identity .form-actions input {
+		font-size: 16px;
+	}
+
+
+	.dialog-outer .dialog,
+	.dialog-outer footer {
+		position: relative;
+	}
+
+	.dialog {
+		margin: 0 auto 30px;
+		border: 1px solid #a4baca;
+		background: #fdfdfd;
+		border-radius: 4px;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+		background-clip: padding-box;
+	}
+
+	.dialog header {
+		position: relative;
+		height: 44px;
+		border: 1px solid #1c5380;
+		border-width: 1px 1px 0;
+		box-shadow: 0 -1px 0 #06365f inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+		border-radius: 4px 4px 0 0;
+		background-color: #517fa4;
+		background-image: url("789f92631216.png"), -webkit-gradient(linear, left top, left bottom, from(#517fa4), to(#306088));
+		background-image: url("789f92631216.png"), -webkit-linear-gradient(top, #517fa4, #306088);
+		background-image: url("789f92631216.png"), -moz-linear-gradient(top, #517fa4, #306088);
+		background-image: url("789f92631216.png"), -o-linear-gradient(top, #517fa4, #306088);
+		background-image: url("789f92631216.png"), -ms-linear-gradient(top, #517fa4, #306088);
+		background-image: url("789f92631216.png"), linear-gradient(to bottom, #517fa4, #306088);
+		background-position: 50% 50%;
+		margin: -1px -1px 1px;
+	}
+
+	.dialog .logo {
+		width: 96px;
+		height: 33px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -14px 0 0 -48px;
+		text-indent: -9999em;
+	}
+
+
+
+	.dialog-outer {
+		position: relative;
+		margin: 0 auto;
+		padding-bottom: 30px;
+
+		.dialog {
+			p {
+				clear: left;
+				// margin-bottom: 10px;
+				display: inline-block;
+				// padding-left: 70px;
+			}
+
+
+			.dialog-main {
+				padding-bottom: 60px;
+
+				label {
+					max-width: 130px;
+				}
+
+				input {
+					width: 221px;
+					height: 36px;
+					font-size: 14px;
+					color: #000000;
+				}
+
+
+				.form-actions {
+
+					input {
+						float: right;
+						text-align: right;
+						position: absolute;
+						right: 30px;
+						font-size: 17px;
+						padding-left: 12px;
+						padding-right: 12px;
+						color: #ffffff;
+					}
+
+					a {
+						float: left;
+						text-align: left;
+						position: absolute;
+						bottom: 40px;
+					}
+				}
+			}
+		}
+	}
+	// ----------- inputs, a, outer
+
+	@media screen and (min-width: 420px) {
+		.dialog p {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		.dialog p {
+			width: 60%;
+		}
+	}
+
+
+
+
+
+
+
+
+
+	.dialog label, .dialog input, .dialog .field-group {
+		float: left;
+		display: inline;
+	}
+
+	.dialog label {
+		width: 35%;
+		padding-top: 5px;
+	}
+
+	.dialog-main {
+		padding: 25px 30px 20px;
+	}
+
+	.p-dialog .dialog-outer {
+		padding: 0 0 74px;
+	}
+
+	.p-dialog .dialog,
+	.oauth-login .dialog {
+		width: 400px;
+	}
+
+	.p-dialog p,
+	.oauth-login p {
+		min-height: 40px;
+	}
+
+	.oauth-login .dialog-main {
+		padding-bottom: 10px;
+	}
+
+	.p-identity .dialog,
+	.oauth-authorize .dialog {
+		width: 600px;
+	}
+
+	.p-identity .dialog-main p,
+	.oauth-authorize .dialog-main p {
+		margin-bottom: 20px;
+	}
+
+
+
+	@media screen and (max-width: 602px) {
+		body.oauth-authorize,
+		.p-identity {
+			overflow-x: hidden;
+		}
+
+		body.oauth-authorize .root,
+		.p-identity .root {
+			padding: 0;
+		}
+
+		body.oauth-authorize .dialog-outer,
+		.p-identity .dialog-outer {
+			padding: 0 0 74px;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog,
+		body.oauth-authorize .dialog-outer footer,
+		.p-identity .dialog-outer .dialog,
+		.p-identity .dialog-outer footer {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 0;
+			border-radius: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog,
+		.p-identity .dialog-outer .dialog {
+			margin: 0;
+			border-width: 0 0 1px;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog header,
+		.p-identity .dialog-outer .dialog header {
+			border-radius: 0;
+			border-width: 0;
+			margin: 0;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog .form-actions,
+		.p-identity .dialog-outer .dialog .form-actions {
+			margin: 0;
+		}
+
+		body.oauth-authorize .dialog-outer footer,
+		.p-identity .dialog-outer footer {
+			margin: 0 0 20px;
+		}
+
+		body.oauth-authorize .dialog-outer footer p,
+		.p-identity .dialog-outer footer p {
+			padding: 0 30px;
+		}
+
+		body.oauth-authorize form,
+		.p-identity form {
+			margin: 0 0 5px;
+		}
+	}
+
+	@media screen and (max-width: 402px) {
+		body.p-dialog,
+		body.oauth-login {
+			overflow-x: hidden;
+		}
+
+		body.p-dialog .root,
+		body.oauth-login .root {
+			padding: 0;
+		}
+
+		body.p-dialog .dialog-outer,
+		body.oauth-login .dialog-outer {
+			padding: 0;
+		}
+
+		body.p-dialog .dialog-outer .dialog,
+		body.p-dialog .dialog-outer footer,
+		body.oauth-login .dialog-outer .dialog,
+		body.oauth-login .dialog-outer footer {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 0;
+			border-radius: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		body.p-dialog .dialog-outer .dialog,
+		body.oauth-login .dialog-outer .dialog {
+			margin: 0;
+			border-width: 0 0 1px;
+		}
+
+		body.p-dialog .dialog-outer .dialog header,
+		body.oauth-login .dialog-outer .dialog header {
+			border-radius: 0;
+			border-width: 0;
+			margin: 0;
+		}
+
+		body.p-dialog .dialog-outer .dialog .form-actions,
+		body.oauth-login .dialog-outer .dialog .form-actions {
+			margin: 0;
+		}
+
+		body.p-dialog .dialog-outer .dialog-main,
+		body.oauth-login .dialog-outer .dialog-main {
+			padding: 20px 15px 10px;
+		}
+
+		body.p-dialog form,
+		body.oauth-login form {
+			margin: 0 0 5px;
+		}
+
+		body.p-dialog .cta,
+		body.oauth-login .cta {
+			margin-top: 20px;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog-main,
+		body.p-identity .dialog-outer .dialog-main {
+			padding: 10px 10px 5px;
+		}
+
+		body.oauth-authorize .dialog-outer .dialog-main p,
+		body.p-identity .dialog-outer .dialog-main p {
+			margin-bottom: 10px;
+		}
+
+		body.oauth-authorize .dialog-outer li,
+		body.p-identity .dialog-outer li {
+			margin: 0 0 5px;
+		}
+
+		body.oauth-authorize .dialog-outer li:last-child,
+		body.p-identity .dialog-outer li:last-child {
+			margin: 0;
+		}
+
+		body.oauth-authorize .dialog-outer form,
+		body.p-identity .dialog-outer form {
+			padding: 14px 0 15px;
+			background: #fff;
+		}
+
+		body.oauth-authorize .dialog-outer form p,
+		body.p-identity .dialog-outer form p {
+			padding-left: 10px;
+		}
+
+		body.oauth-authorize .dialog-outer .actions,
+		body.p-identity .dialog-outer .actions {
+			right: 10px;
+		}
+
+		body.oauth-authorize .dialog-outer .actions li,
+		body.p-identity .dialog-outer .actions li {
+			margin-left: 5px;
+			margin-bottom: 10px;
+		}
+
+		body.oauth-authorize .dialog-outer footer,
+		body.p-identity .dialog-outer footer {
+			padding: 10px 0;
+		}
+
+		body.oauth-authorize .dialog-outer footer p,
+		body.p-identity .dialog-outer footer p {
+			padding: 0 10px;
+		}
+	}
+
+	.p-identity .dialog p {
+		min-height: 0;
+		margin: 0 0 10px;
+	}
+
+	.p-identity .dialog form p {
+		min-height: 30px;
+	}
+
+	.p-identity .dialog .form-actions {
+		padding-top: 10px;
+	}
+
+	.p-identity .dialog .form-actions a {
+		margin-top: 0;
+	}
+
+
+	.dialog .cp-intro {
+		padding-bottom: 14px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.dialog .cp-intro ul {
+		padding-left: 16px;
+		margin: 0 0 10px;
+	}
+
+	.dialog .cp-intro li {
+		overflow: visible;
+		display: list-item;
+		list-style: square;
+	}
+}

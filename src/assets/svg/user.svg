@@ -1,0 +1,15 @@
+<svg viewBox="-0.5 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.0447173%" id="linearGradient-1">
+            <stop stop-color="#B4B5C6" offset="0%"></stop>
+            <stop stop-color="#8F90A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-2554.000000, -1906.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="4" transform="translate(50.000000, 1871.000000)">
+                <path d="M2520.5,35 C2525.74671,35 2530,39.2532949 2530,44.5 C2530,48.0856715 2528.01348,51.2073661 2525.08096,52.8245559 C2531.42682,54.9472647 2536,60.939571 2536,68 L2536,68 L2504,68 C2504,60.700268 2508.88843,54.5422906 2515.57023,52.6211363 C2512.83014,50.9558397 2511,47.941646 2511,44.5 C2511,39.2532949 2515.25329,35 2520.5,35 Z" id="user"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg class="imgButton" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+    <g transform="rotate(180 256 256)">
+        <mask id="svgIDa">
+        <circle cx="256" cy="256" r="256" fill="#fff" />
+        </mask>
+        <g mask="url(#svgIDa)">
+            <path fill="#eee" d="m0 167l253.8-19.3L512 167v178l-254.9 32.3L0 345z" />
+            <path fill="#d80027" d="M0 0h512v167H0z" />
+            <path fill="#6da544" d="M0 345h512v167H0z" />
+        </g>
+    </g>
+</svg>

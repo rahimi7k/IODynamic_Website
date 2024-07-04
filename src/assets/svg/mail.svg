@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 -5 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>envelope</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E6E7F2" offset="0%"></stop>
+            <stop stop-color="#D7D8E6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F2F4FA" offset="0%"></stop>
+            <stop stop-color="#E1E2F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#EDEEF4" offset="0%"></stop>
+            <stop stop-color="#EDEDF9" offset="100%"></stop>
+        </linearGradient>
+        <path d="M31.1511259,18.3654083 C32.1264692,19.0695415 32.2846036,20.3538702 31.504329,21.2340366 C31.0751396,21.7181714 30.4253519,22 29.7383137,22 L2.26160305,22 C1.01255418,22 0,21.0862538 0,19.9590907 C0,19.3390957 0.31230413,18.7527161 0.848790825,18.3654083 L14.5871461,8.44722688 C15.361502,7.88819328 16.441441,7.85325368 17.2539947,8.34240808 L17.4127706,8.44722688 L31.1511259,18.3654083 Z" id="path-4"></path>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-2034.000000, -1910.000000)" fill-rule="nonzero">
+            <g id="4" transform="translate(50.000000, 1871.000000)">
+                <g id="envelope" transform="translate(2000.000000, 50.000000) rotate(-180.000000) translate(-2000.000000, -50.000000) translate(1984.000000, 39.000000)">
+                    <path d="M29,0 C30.6568542,0 32,1.34314575 32,3 L32,19 C32,20.6568542 30.6568542,22 29,22 L3,22 C1.34314575,22 0,20.6568542 0,19 L0,3 C0,1.34314575 1.34314575,0 3,0 L29,0 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                    <path d="M13.1724992,12.2794 L0.848874104,3.56173762 C-0.126469204,2.87171852 -0.284603599,1.61313378 0.495671048,0.750609905 C0.924860404,0.276179438 1.57464814,1.59872116e-14 2.26168633,1.59872116e-14 L29.7383969,1.59872116e-14 C30.9874458,1.59872116e-14 32,0.8954305 32,2 C32,2.60756744 31.6876959,3.18219325 31.1511985,3.5617452 L18.8266993,12.2806527 L15.9996957,10.2808695 L13.1724992,12.2794 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                    <g id="Path">
+                        <use fill="#000000" xlink:href="#path-4"></use>
+                        <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

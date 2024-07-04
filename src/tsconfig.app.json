@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "importHelpers": true,
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+
+        "outDir": "../out-tsc/app",
+        "baseUrl": "./",
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "module": "es2020", //it's same as esnext
+        "target": "es2015",
+        "downlevelIteration": true,
+        "charset": "utf8",
+        "emitBOM": true,
+
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            // "es2017",
+            "dom"
+        ]
+
+    },
+    "exclude": [
+        "test.ts",
+        "**/*.spec.ts",
+        "../node_modules/@nebular/**/*.spec.ts",
+        "**/*.worker.ts"
+    ],
+    "include": [
+        "../src/*.ts",
+        // "../src/**/*.ts",
+        "../node_modules/@nebular/**/*.ts",
+        "./app/@theme/components/index.ts",
+        "./app/@theme/layouts/index.ts",
+        "./app/@core/Utils/index.ts"
+    ],
+    "files": [
+        "main.ts",
+        "polyfills.ts"
+        // "node_modules/@types/node/index.d.ts"
+    ]
+
+}

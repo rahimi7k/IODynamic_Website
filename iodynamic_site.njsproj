@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73e41369-53ac-4286-a73f-1566333ef54b}</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>iodynamic_site</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="angular.json" />
+    <Content Include="extra-webpack.config.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="gulpfile.js" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="src\app\%40core\Utils\Toast.ts">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\app\%40theme\components\footer\footer.component.html" />
+    <Content Include="src\app\%40theme\styles\styles-classes.scss">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\app\pages\ui\popup\popup.component.scss" />
+    <Content Include="src\assets\js\paymentpopup.js" />
+    <None Include="tsconfig.json" />
+    <Content Include="e2e\tsconfig.e2e.json" />
+    <Content Include="src\index.html" />
+    <Content Include="src\favicon.png" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\tsconfig.app.json" />
+    <None Include="src\main.ts" />
+    <None Include="src\polyfills.ts" />
+    <None Include="src\test.ts" />
+    <None Include="src\app\app-routing.module.ts" />
+    <None Include="src\app\app.component.ts" />
+    <None Include="src\app\app.module.ts" />
+    <None Include="src\environments\environment.prod.ts" />
+    <None Include="src\environments\environment.ts" />
+    <None Include="src\app\@core\module-import-guard.ts" />
+    <None Include="src\app\%40core\Pipe\pipe.module.ts" />
+    <None Include="src\app\pages\pages-routing.module.ts" />
+    <None Include="src\app\pages\pages.component.ts" />
+    <None Include="src\app\pages\pages.module.ts" />
+    <None Include="src\app\%40core\Utils\index.ts" />
+    <None Include="src\app\%40core\Utils\layout.service.ts" />
+    <None Include="src\app\%40core\Utils\seo.service.ts" />
+    <None Include="src\app\%40core\Utils\state.service.ts" />
+    <None Include="src\app\@theme\components\index.ts" />
+    <None Include="src\app\@theme\layouts\index.ts" />
+    <None Include="src\app\@theme\pipes\capitalize.pipe.ts" />
+    <None Include="src\app\@theme\pipes\index.ts" />
+    <None Include="src\app\@theme\pipes\number-with-commas.pipe.ts" />
+    <None Include="src\app\@theme\pipes\plural.pipe.ts" />
+    <None Include="src\app\@theme\pipes\round.pipe.ts" />
+    <None Include="src\app\@theme\pipes\timing.pipe.ts" />
+    <None Include="src\app\@theme\styles\theme.cosmic.ts" />
+    <None Include="src\app\@theme\styles\theme.dark.ts" />
+    <None Include="src\app\@theme\styles\theme.default.ts" />
+    <None Include="src\app\@theme\components\footer\footer.component.ts" />
+    <Content Include="src\app\@theme\components\header\header.component.html" />
+    <None Include="src\app\@theme\components\header\header.component.ts" />
+    <None Include="src\app\@theme\layouts\one-column\one-column.layout.ts" />
+    <None Include="src\app\@theme\layouts\three-columns\three-columns.layout.ts" />
+    <None Include="src\app\@theme\layouts\two-columns\two-columns.layout.ts" />
+    <Content Include="src\assets\images\alan.png" />
+    <Content Include="src\assets\images\eva.png" />
+    <Content Include="src\assets\images\jack.png" />
+    <Content Include="src\assets\images\kate.png" />
+    <Content Include="src\assets\images\kitten-corporate.png" />
+    <Content Include="src\assets\images\kitten-cosmic.png" />
+    <Content Include="src\assets\images\kitten-dark.png" />
+    <Content Include="src\assets\images\kitten-default.png" />
+    <Content Include="src\assets\images\lee.png" />
+    <Content Include="src\assets\images\nick.png" />
+    <Content Include="src\assets\images\team.png" />
+    <Content Include="src\assets\images\camera1.jpg" />
+    <Content Include="src\assets\images\camera2.jpg" />
+    <Content Include="src\assets\images\camera3.jpg" />
+    <Content Include="src\assets\images\camera4.jpg" />
+    <Content Include="src\assets\images\cover1.jpg" />
+    <Content Include="src\assets\images\cover2.jpg" />
+    <Content Include="src\assets\images\cover3.jpg" />
+    <Content Include="src\assets\images\square_pattern.svg" />
+    <Content Include="src\assets\images\square_pattern_cosmic.svg" />
+    <Content Include="src\assets\skins\lightgray\content.inline.min.css" />
+    <Content Include="src\assets\skins\lightgray\content.min.css" />
+    <Content Include="src\assets\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="src\assets\skins\lightgray\skin.min.css" />
+    <Content Include="src\assets\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="src\assets\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="src\assets\skins\lightgray\img\anchor.gif" />
+    <Content Include="src\assets\skins\lightgray\img\loader.gif" />
+    <Content Include="src\assets\skins\lightgray\img\object.gif" />
+    <Content Include="src\assets\skins\lightgray\img\trans.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="e2e" />
+    <Folder Include="src" />
+    <Folder Include="src\app" />
+    <Folder Include="src\app\%40core\IONet\" />
+    <Folder Include="src\app\%40core\Pipe\" />
+    <Folder Include="src\app\%40core\Thread\" />
+    <Folder Include="src\app\%40core\IndexDB\" />
+    <Folder Include="src\app\@core" />
+    <Folder Include="src\app\%40core\Utils\" />
+    <Folder Include="src\app\@theme" />
+    <Folder Include="src\app\@theme\components" />
+    <Folder Include="src\app\@theme\components\footer" />
+    <Folder Include="src\app\@theme\components\header" />
+    <Folder Include="src\app\@theme\layouts" />
+    <Folder Include="src\app\@theme\layouts\one-column" />
+    <Folder Include="src\app\@theme\layouts\three-columns" />
+    <Folder Include="src\app\@theme\layouts\two-columns" />
+    <Folder Include="src\app\@theme\pipes" />
+    <Folder Include="src\app\@theme\styles" />
+    <Folder Include="src\app\auth\" />
+    <Folder Include="src\app\auth\policy\" />
+    <Folder Include="src\app\pages" />
+    <Folder Include="src\app\pages\contact-us\" />
+    <Folder Include="src\app\pages\home\" />
+    <Folder Include="src\app\pages\setting\" />
+    <Folder Include="src\app\pages\shop\" />
+    <Folder Include="src\app\pages\ui\" />
+    <Folder Include="src\app\pages\ui\circle-load-animation\" />
+    <Folder Include="src\app\pages\ui\popup\" />
+    <Folder Include="src\assets" />
+    <Folder Include="src\assets\images" />
+    <Folder Include="src\assets\js\" />
+    <Folder Include="src\app\auth\policy\languages\" />
+    <Folder Include="src\assets\skins" />
+    <Folder Include="src\assets\skins\lightgray" />
+    <Folder Include="src\assets\skins\lightgray\fonts" />
+    <Folder Include="src\assets\skins\lightgray\img" />
+    <Folder Include="src\environments" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\%40core\core.module.ts" />
+    <TypeScriptCompile Include="src\app\%40core\ManageData.ts" />
+    <TypeScriptCompile Include="src\app\%40core\Network.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\%40core\Pipe\safe.pipe.ts" />
+    <TypeScriptCompile Include="src\app\%40theme\theme.module.ts" />
+    <TypeScriptCompile Include="src\app\app-init.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\%40core\Utils\StorageUtils.ts" />
+    <TypeScriptCompile Include="src\app\%40core\Utils\StringUtils.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\%40core\IndexDB\IndexDBHandler.ts" />
+    <TypeScriptCompile Include="src\app\%40core\IndexDB\IndexDB.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\pages\contact-us\contact-us.routing.module.ts" />
+    <TypeScriptCompile Include="src\app\pages\home\home.routing.module.ts" />
+    <TypeScriptCompile Include="src\app\pages\setting\setting.routing.module.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

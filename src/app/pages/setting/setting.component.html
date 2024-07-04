@@ -1,0 +1,96 @@
+<div class="setting {{direction}}">
+
+    <nb-card class="page-container">
+
+        <nb-card-header class="page-header">
+            <img src="assets/images/ic_setting.png" class="page-header-image" /><h1 class="page-header-title">{{language.Setting_Title}}</h1>
+        </nb-card-header>
+
+        <nb-card-body class="page">
+
+            <div class="box theme">
+                <div class="title">
+                    <img class="icon" src="assets/svg/theme.svg" />
+                    <b>{{language.Setting_Theme_Title}}</b>
+                </div>
+
+                <app-button class="button-conatiner" #Setting_Button_Theme_Default [text]="language.Setting_Theme_Default" [isStatic]="true"
+                            imgInnerHTML='<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><circle fill="#51dc47" cx="16" cy="16" r="16" /></svg>'></app-button>
+
+                <app-button class="button-conatiner" #Setting_Button_Theme_Dark [text]="language.Setting_Theme_Dark" [isStatic]="true"
+                            imgInnerHTML='<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><circle fill="#182390" cx="16" cy="16" r="16" /></svg>'></app-button>
+
+                <app-button class="button-conatiner" #Setting_Button_Theme_Cosmic [text]="language.Setting_Theme_Cosmic" [isStatic]="true"
+                            imgInnerHTML='<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><circle fill="#6729b3" cx="16" cy="16" r="16" /></svg>'></app-button>
+
+
+                <!--<button id="Setting_Button_Theme_Cosmic" (click)="changeTheme('cosmic')" class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="imgButton" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><circle fill="#6729b3" cx="16" cy="16" r="16" /></svg>
+            &nbsp;&nbsp;<p>{{language.Setting_Theme_Cosmic}}</p>
+        </button>-->
+            </div>
+            <div class="box language">
+                <div class="title">
+                    <img class="icon" src="assets/images/ic_language.png" />
+                    <b>{{language.Setting_Language_Title}}</b>
+                </div>
+
+                <app-button class="button-conatiner" #Setting_Button_Language_En [text]="language.Setting_Language_En"
+                            imgSrc="assets/svg/flag/uk.svg" [isStatic]="true"></app-button>
+
+                <app-button class="button-conatiner" #Setting_Button_Language_Fa [text]="language.Setting_Language_Fa"
+                            imgSrc="assets/svg/flag/ir.svg" [isStatic]="true"></app-button>
+
+            </div>
+            <!--
+               <div class="box cli">
+                   <div class="title">
+                       <img class="icon" src="assets/svg/cli.svg" />
+                       <b>{{language.Setting_Cli_Title}}</b>
+                   </div>
+
+
+                   <label class="my-label" for="Setting_Switch_Cli">{{language.Setting_Cli_Activity_In_Pages}}</label>
+                   <label class="switch">
+                       <input type="checkbox" (click)="onClickCliSwitch()" id="Setting_Switch_Cli">
+                       <span class="slider round"></span>
+                   </label>
+               </div>
+    -->
+
+            <div class="box lastBox audio">
+                <div class="title">
+                    <img class="icon" src="assets/svg/sound.svg" />
+                    <b>{{language.Setting_Audio_Title}}</b>
+                </div>
+                <div>
+                    <label class="my-label" for="Setting_Switch_Audio">{{language.Setting_Audio_Activity}}</label>
+                    <label class="switch">
+                        <input type="checkbox" (click)="onClickAudioSwitch()" id="Setting_Switch_Audio">
+                        <span class="slider round"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="volume">
+                    <label class="my-label" for="Setting_Switch_Audio">{{language.Setting_Audio_Volume}}</label>
+                    <p class="number">{{soundVolumeDisplay}}</p>
+
+                    <div class="seekbar-container">
+                        <div class="seekbar">
+                            <input class="seekbar-input" type="range" min="0" max="100" value="{{soundVolume}}" step="1" (input)="onSoundVolumeSeekBarChange($event)" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nb-card-body>
+
+
+    </nb-card>
+
+    <ng-container #Setting_Dynamic_Container class="dynamic-container"> </ng-container>
+
+</div>

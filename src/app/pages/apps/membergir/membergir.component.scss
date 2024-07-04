@@ -1,0 +1,164 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+    .page-container {
+
+        .body_container {
+            padding: 30px 25px 60px;
+
+            .download-button {
+                text-align: center;
+                cursor: pointer;
+
+                img {
+                    margin: 0 5px;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .block {
+                padding: 8px 0;
+
+                .icon {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .title {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+
+
+        .ability {
+            margin-top: 50px;
+
+            .ability_header {
+                background: nb-theme(background-basic-color-1);
+                text-align: center;
+                padding: 13px 0;
+                margin: 13px 0;
+
+                .page-header-image {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .page-header-title {
+                    margin: 0 8px;
+                }
+            }
+
+            .ability_container {
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                .ability_body {
+                    display: inline-block;
+                    width: min(330px, 85%);
+                    background: nb-theme(background-basic-color-1);
+                    height: 250px;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid nb-theme(background-basic-color-3);
+                    padding: 5px 13px;
+                    margin: 13px 5px;
+                    text-align: center;
+
+                    .head_img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    h6 {
+                        display: block;
+                        text-align: center;
+                        margin-top: 3px;
+                    }
+
+                    p {
+                        display: inline-block;
+                        text-align: center;
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+
+
+        .download {
+            margin-top: 40px;
+
+            nb-card-header {
+                .header {
+                    text-align: center;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    h5 {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            nb-card-body {
+                .body_container {
+
+                    p {
+                        margin: 0 21px;
+                    }
+
+
+                    .header {
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        .text {
+                            margin: 0 5px;
+                        }
+                    }
+
+                    .block {
+                        padding: 8px 0;
+                        cursor: pointer;
+                        display: inline-block;
+
+                        img {
+                            width: 40px;
+                        }
+
+                        .title {
+                            display: inline-block;
+                            font-weight: bold;
+                            display: inline-block;
+                            padding: 0 5px;
+                        }
+
+                        .matn {
+                            margin-top: 3px;
+                        }
+                    }
+
+                    .app-stores {
+                        margin: 0 21px;
+                    }
+                }
+            }
+        }
+
+        .tags {
+            margin-top: 40px;
+        }
+    }
+}

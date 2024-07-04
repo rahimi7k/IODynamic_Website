@@ -1,0 +1,116 @@
+<div class="home {{direction}}">
+
+	<nb-card class="page-container">
+
+		<nb-card-header class="page-header">
+			<img src="assets/images/ic_projects.png" class="page-header-image" />
+			<h1 class="page-header-title">{{language.Home_Projects}}</h1>
+		</nb-card-header>
+
+		<nb-card-body>
+
+			<div class="apps">
+				<div class="projects">
+					<div class="project">
+						<div class="project_container">
+							<div class="project_body">
+								<img src="assets/images/ic_project_followergir.png" alt="#" class="project_img" />
+								<h2 class="title">{{language.Home_Followergir_AppName}}</h2>
+								<div class="msg">
+									<p>{{language.Home_Followergir_Explain}}</p>
+								</div>
+								<div class="btn-container">
+									<app-button #Home_Followergir_App class="button" [text]="language.Home_Followergir_Button_Login_Panel" [isStatic]="true"></app-button>
+									<app-button #Home_Followergir_Buy class="button" [text]="language.Home_Followergir_Button_Get_Follower" [routerLink]="['/shop']" routerLinkActive="active" [isStatic]="true"></app-button>
+									<app-button #Home_Followergir_Description class="button" [text]="language.Home_Followergir_Button" [routerLink]="['/apps/followergir']" [isStatic]="true"></app-button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project">
+						<div class="project_container">
+							<div class="project_body">
+								<img src="assets/images/ic_project_telegram.png" alt="#" class="project_img" />
+								<h2 class="title">{{language.Home_Membergir_AppName}}</h2>
+								<div class="msg">
+									<p>{{language.Home_Membergir_Explain}}</p>
+								</div>
+								<div class="btn-container">
+									<app-button #Home_Membergir_App class="button" [text]="language.Home_Membergir_Button_Login_Panel" [isStatic]="true"></app-button>
+									<app-button #Home_Membergir_Buy class="button" [text]="language.Home_Membergir_Button_Get_Member" [routerLink]="['/shop']" routerLinkActive="active" [isStatic]="true"></app-button>
+									<app-button #Home_Membergir_Description class="button" [text]="language.Home_Membergir_Button" [routerLink]="['/apps/membergir']" [isStatic]="true"></app-button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nb-card-body>
+	</nb-card>
+
+
+	<div style="position: absolute; opacity: 0; height: 1px;">
+		{{language.FollowergirPage_Tags2}}
+		{{language.FollowergirPage_Tags3}}
+		{{language.FollowergirPage_Tags4}}
+	</div>
+
+
+	<div class="ability">
+
+		<div class="ability_header">
+			<h2 class="page-header-title">{{language.Home_Ability_Header}}</h2>
+		</div>
+
+		<div class="ability_container">
+
+			<div class="ability_body">
+				<img class="head_img" src="assets/svg/speedometer.svg" />
+				<strong>{{language.Home_Ability_1_Title}}</strong>
+				<p>{{language.Home_Ability_1_Message}}</p>
+			</div>
+			<div class="ability_body">
+				<img class="head_img" src="assets/svg/theme.svg" />
+				<strong>{{language.Home_Ability_2_Title}}</strong>
+				<p>{{language.Home_Ability_2_Message}}</p>
+			</div>
+			<div class="ability_body">
+				<img class="head_img" src="assets/svg/lock.svg" />
+				<strong>{{language.Home_Ability_3_Title}}</strong>
+				<p>{{language.Home_Ability_3_Message}}</p>
+			</div>
+
+			<div class="ability_body">
+				<img class="head_img" src="assets/images/ic_setting.png" />
+				<strong>{{language.Home_Ability_4_Title}}</strong>
+				<p>{{language.Home_Ability_4_Message}}</p>
+			</div>
+			<div class="ability_body">
+				<img class="head_img" src="assets/svg/api_monitor.svg" />
+				<strong>{{language.Home_Ability_5_Title}}</strong>
+				<p>{{language.Home_Ability_5_Message}}</p>
+			</div>
+			<div class="ability_body">
+				<img class="head_img" src="assets/svg/mail.svg" />
+				<strong>{{language.Home_Ability_6_Title}}</strong>
+				<p>{{language.Home_Ability_6_Message}}</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div style="position:absolute; opacity: 0; height: 5px;" class="body_container">
+		{{language.FollowergirPage_Tags1}}
+		{{language.FollowergirPage_Tags5}}
+		{{language.FollowergirPage_Tags6}}
+	</div>
+
+</div>
+
+<ng-template #Home_Dynamic_Container class="dynamic-container"></ng-template>
+
+
+

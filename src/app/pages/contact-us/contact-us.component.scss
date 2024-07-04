@@ -1,0 +1,121 @@
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+    .rtl {
+        .form-input {
+            text-align: right;
+            direction: rtl;
+        }
+    }
+
+
+    .contact-us {
+        width: 100%;
+
+
+        .page {
+
+            .section-container {
+
+                .section-header {
+                    padding: 21px 0 10px;
+
+                    .title-section {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+
+                .section {
+                    max-width: 450px;
+                    margin: 13px 15px
+                }
+
+                .section-email {
+
+                    .form-group {
+                        width: contain; //100% is not inside section, contain is better choice
+                        margin: 8px 21px 0;
+
+                        .title {
+                            padding: 8px 5px 0px;
+                            display: block;
+                        }
+
+                        input {
+                            width: 200px;
+                        }
+
+                        .description {
+                            display: block;
+                            margin: 0 auto;
+                            width: 90%;
+                            max-width: 90%;
+                            min-width: 90%;
+                            max-width: 600px;
+                            height: 210px;
+                            min-height: 210px;
+                            max-height: 210px;
+                        }
+                    }
+                    /*
+                    .captchaBox {
+                        display: inline-block;
+                        margin: 0;
+
+                        .captha-text {
+                            width: 120px;
+                            display: block;
+                        }
+
+                        .captha {
+                            height: 70px;
+                            max-width: 180px;
+                            border-radius: 8px;
+                            display: inline-block;
+                            box-shadow: 1px 1px 8px #a8a8a8;
+                            margin-bottom: 5px;
+                        }
+                    }*/
+
+                    .button-container {
+                        text-align: center;
+                        margin: 40px 0 20px;
+                    }
+                }
+
+                .section-about-us {
+
+                    .content {
+                        padding: 28px 21px;
+
+                        .matn {
+                            margin: 0 13px;
+                            line-height: normal;
+                        }
+
+                        .image {
+                            width: 42px;
+                            height: 42px;
+                        }
+                    }
+
+                    .title {
+                        padding: 8px 8px;
+                        display: inline-block;
+                    }
+
+                    .link {
+                        display: block;
+                        text-decoration: none;
+                    }
+
+                    .lastContent {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

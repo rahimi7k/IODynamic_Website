@@ -1,0 +1,98 @@
+<div class="shop-page {{direction}}">
+
+    <nb-card class="page-container">
+
+        <nb-card-header class="page-header">
+            <img src="assets/images/ic_shop.png" class="page-header-image" /><h1 class="page-header-title">{{language.Shop_Header}}</h1>
+        </nb-card-header>
+
+        <nb-card-body class="page">
+            <div class="row all-packages" *ngIf="isPackageLoaded === true">
+                <div class="package">
+                    <img src="assets/images/bag-coin.png" class="header_img" alt="#" />
+                    <h6>{{language.Shop_Package_Free}}</h6>
+                    <hr class="hr" />
+                    <div class="tozih">
+                        <img src="assets/images/ic_coin.png" />
+                        <p>{{language.Shop_Coin}}: {{language.Shop_Package_Free_Credit}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_dollar.png" />
+                        <p>{{language.Shop_Price}}: {{language.Shop_Package_Free_Price}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_user_add.png" />
+                        <p>{{language.Shop_OneKMember}}: {{language.Shop_Package_Free_Price}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_love_add.png" />
+                        <p>{{language.Shop_OneKLike}}: {{language.Shop_Package_Free_Price}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_comment_add.png" />
+                        <p>{{language.Shop_OneKComment}}: {{language.Shop_Package_Free_Price}}</p>
+                    </div>
+
+                    <div class="button-container">
+                        <!--<button type="button" id="Shop_PayBtn_Coin_{{i}}" class="button" (click)="showPopUp(i)"><span>{{language.Shop_Buy}}</span></button>-->
+                        <app-button #Shop_PaymentButton_Free [text]="language.Shop_Package_Free_Button" [isStatic]="true"></app-button>
+
+                    </div>
+                </div>
+                <div class="package" *ngFor="let item of coinList; let i = index">
+                    <img src="assets/images/{{item.image}}" class="header_img" alt="#" />
+                    <h6>{{language.Shop_Package}} {{item.id}}</h6>
+                    <hr class="hr" />
+                    <div class="tozih">
+                        <img src="assets/images/ic_coin.png" />
+                        <p>{{language.Shop_Coin}}: {{item.stringCoin}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_dollar.png" />
+                        <p>{{language.Shop_Price}}: {{item.stringPrice}} {{language.Shop_Value}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_user_add.png" />
+                        <p>{{language.Shop_OneKMember}}: {{item.oneKPriceUser}} {{language.Shop_Value}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_love_add.png" />
+                        <p>{{language.Shop_OneKLike}}: {{item.oneKPriceLike}} {{language.Shop_Value}}</p>
+                    </div>
+                    <div class="tozih">
+                        <img src="assets/images/ic_comment_add.png" />
+                        <p>{{language.Shop_OneKComment}}: {{item.oneKPriceComment}} {{language.Shop_Value}}</p>
+                    </div>
+
+                    <div class="button-container">
+                        <!--<button type="button" id="Shop_PayBtn_Coin_{{i}}" class="button" (click)="showPopUp(i)"><span>{{language.Shop_Buy}}</span></button>-->
+                        <app-button #Shop_PaymentButton [text]="language.Shop_Buy" [isStatic]="true"></app-button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row all-packages" *ngIf="isPackageLoaded === false" id="Shop_Empty_Coin_Item">
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+                <div class="package loading"></div>
+            </div>
+        </nb-card-body>
+
+
+        <nb-card-footer class="page-footer">
+            <ul>
+                <li>{{language.Shop_Warning1}}</li>
+            </ul>
+        </nb-card-footer>
+
+    </nb-card>
+
+</div>
+
+
+<ng-template #Shop_Dynamic_Container class="dynamic-container"></ng-template>

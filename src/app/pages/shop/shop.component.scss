@@ -1,0 +1,251 @@
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+	.shop-page {
+
+		.page {
+			overflow: hidden;
+
+			.all-packages {
+				display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+				display: -ms-flexbox; /* TWEENER - IE 10 */
+				display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+				display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+				justify-content: center;
+				align-items: center;
+				overflow: hidden;
+				padding: 15px 0 30px;
+
+
+				.package {
+					padding: 0 13px;
+					background: nb-theme(background-basic-color-2);
+					border: solid;
+					border-color: nb-theme(background-basic-color-4);
+					border-width: 1px;
+					border-radius: 20px;
+					margin: 20px 13px 0;
+					display: inline-block;
+					min-width: 290px;
+					max-width: 320px;
+					min-height: 500px;
+					box-shadow: 5px 8px 15px -10px rgba(0,0,0,0.25);
+
+					.header_img {
+						display: block;
+						margin: 21px auto 0;
+						width: 135px;
+						height: 135px;
+					}
+
+					p {
+						display: inline-block;
+						margin: 0 2px;
+					}
+
+					h6 {
+						display: block;
+						padding-top: 5px;
+						text-align: center;
+					}
+
+					.text {
+						height: 200px;
+						padding-top: 10px;
+					}
+
+					.tozih {
+						display: inline-block;
+						width: 100%;
+						margin-top: 10px;
+						margin-right: 3px;
+
+						img {
+							width: 25px;
+							height: 25px;
+						}
+
+						p {
+							margin-right: 5px;
+						}
+					}
+
+					.button-container {
+						padding: 40px 0 20px;
+						text-align: center;
+					}
+				}
+
+
+				@keyframes placeHolderShimmer {
+					0% {
+						background-position: -468px 0;
+					}
+
+					100% {
+						background-position: 468px 0;
+					}
+				}
+
+				.loading {
+					animation-duration: 1s;
+					animation-fill-mode: forwards;
+					animation-iteration-count: infinite;
+					animation-timing-function: linear;
+					animation-name: placeHolderShimmer;
+					// background: #f6f7f8;
+					// background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+					background: linear-gradient(to right, nb-theme(background-basic-color-2) 8%, nb-theme(background-basic-color-3) 18%, nb-theme(background-basic-color-2) 33%);
+					background-size: 800px 104px;
+					position: relative;
+				}
+			}
+		}
+
+		.page-footer {
+
+			ul {
+
+				li {
+					list-style-type: none;
+					padding: 8px 0;
+					line-height: normal;
+				}
+
+				li::before {
+					text-align: center;
+					content: "\2022";
+					border-color: nb-theme(background-basic-color-4);
+					font-weight: bold;
+					display: inline-block;
+					width: 1em;
+				}
+			}
+		}
+	}
+
+
+
+
+	.popup-container {
+
+		.header {
+			.packageImg {
+				width: 85px;
+				height: 85px;
+			}
+		}
+
+		.body {
+
+			.lines {
+				margin-top: 30px;
+
+				.line {
+					margin-top: 20px;
+
+					img {
+						width: 25px;
+						height: 25px;
+					}
+
+					label {
+						margin: 0 5px;
+					}
+
+					p {
+						display: inline-block;
+						margin: 0 10px;
+					}
+				}
+			}
+
+			.btn-container {
+				margin-top: 70px;
+			}
+		}
+	}
+
+
+
+	.payment {
+
+		.body {
+			@media (min-width:575px) {
+				margin: 30px 25% 0;
+			}
+
+			@media (max-width:575px) {
+				margin: 30px 3% 0;
+			}
+
+			.dropdown-container {
+				margin: 20px auto 0;
+				display: table;
+
+
+				.label {
+					margin: 0 5px;
+					display: inline-block;
+				}
+				/*
+				.dropdown {
+					display: inline-block;
+					width: 170px;
+					position: absolute;
+					background: nb-theme(background-basic-color-1);
+					line-height: 15px;
+
+
+					.dropdown-select {
+						line-height: 15px;
+						background: nb-theme(background-basic-color-1);
+						color: unset;
+						overflow: auto;
+					}
+
+					.dropdown-select:active {
+						z-index: 3;
+						width: 100%;
+						outline: none;
+					}
+				}
+				// Fix for IE 8 putting the arrows behind the select element.
+				.lt-ie9 .dropdown {
+					z-index: 1;
+				}
+
+				.lt-ie9 .dropdown-select {
+					z-index: -1;
+				}
+
+				.lt-ie9 .dropdown-select:focus {
+					z-index: 3;
+				}
+				// Dirty fix for Firefox adding padding where it shouldn't.
+				@-moz-document url-prefix() {
+					.dropdown-select {
+						padding-left: 6px;
+					}
+				}
+				*/
+			}
+		}
+	}
+
+
+
+	.payment-result {
+
+		.body {
+			@media (min-width:575px) {
+				margin: 30px 10% 0;
+			}
+
+			@media (max-width:575px) {
+				margin: 30px 3% 0;
+			}
+		}
+	}
+}

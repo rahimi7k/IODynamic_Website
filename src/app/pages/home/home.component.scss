@@ -1,0 +1,167 @@
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+	.home {
+
+		.page-container {
+
+			@media only screen and (min-width: 1000px) {
+				.apps {
+					display: table;
+					border-collapse: separate;
+					border-spacing: 8px;
+
+					.projects {
+						display: table-row;
+
+						.project {
+							display: table-cell;
+							width: 48%;
+						}
+					}
+				}
+			}
+
+
+			@media only screen and (max-width: 1000px) {
+				.apps {
+
+					.projects {
+
+						.project {
+							width: 80%;
+							margin: 0 auto;
+							margin-top: 8px;
+						}
+					}
+				}
+			}
+
+
+			.apps {
+
+				.projects {
+					text-align: center;
+
+					.project {
+						// padding: 5px;
+						// margin: 5px;
+						background: nb-theme(background-basic-color-2);
+						border-spacing: 30px;
+
+
+
+						.project_container {
+
+							.project_body {
+								width: 100%;
+								line-height: 30px;
+								border-radius: 8px;
+								margin: 10px;
+								padding: 10px;
+								text-align: center;
+
+								.project_img {
+									width: 128px;
+									height: 128px;
+								}
+
+								.title {
+									text-align: center;
+									display: block;
+									margin-top: 8px;
+								}
+
+								.msg {
+									text-align: center;
+									height: fit-content;
+									min-height: 110px;
+									margin-top: 13px;
+
+									p {
+										display: inline-block;
+									}
+								}
+
+								.btn-container {
+									display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+									display: -ms-flexbox; /* TWEENER - IE 10 */
+									display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+									display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+									justify-content: center;
+									flex-wrap: wrap;
+									margin-top: 21px;
+
+									.button {
+										margin: 5px 5px 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.ability {
+			padding-top: 20px;
+
+			.ability_header {
+				background: nb-theme(background-basic-color-1);
+				text-align: center;
+				padding: 13px 0;
+				margin: 10px;
+
+				.page-header-title {
+					font-size: medium;
+				}
+			}
+
+			.ability_container {
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+
+				.ability_body {
+					display: inline-block;
+					width: min(330px, 85%);
+					background: nb-theme(background-basic-color-1);
+					height: 250px;
+					overflow: hidden;
+					border-radius: 8px;
+					border: 1px solid nb-theme(background-basic-color-3);
+					padding: 5px 13px;
+					margin: 13px 5px;
+					text-align: center;
+
+					.head_img {
+						width: 80px;
+						height: 80px;
+					}
+
+					strong {
+						display: block;
+						text-align: center;
+						margin-top: 3px;
+					}
+
+					p {
+						display: inline-block;
+						text-align: center;
+						margin-top: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,172 @@
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+    $min-width: 575px;
+
+    .page {
+
+        @media only screen and (min-width: $min-width) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: $min-width) {
+            width: 100%;
+        }
+
+        .box {
+            border-bottom: 1px solid nb-theme(hr-menu-color);
+            padding: 15px 15px 30px;
+
+            .title {
+                margin-bottom: 5px;
+
+                img {
+                    width: 25px;
+                }
+
+                b {
+                    margin: 0 8px;
+                }
+            }
+
+            .button-conatiner {
+                display: inline-block;
+                margin: 5px;
+            }
+
+
+            .button-select {
+                opacity: 0.6;
+            }
+        }
+
+        .lastBox {
+            border-bottom: none;
+        }
+
+        .theme, .cli, .audio, .language, .profile {
+
+            .icon {
+                width: 26px;
+                height: 26px;
+            }
+
+            label {
+                display: inline-block;
+            }
+
+            .switch {
+                margin: 0 8px;
+            }
+        }
+
+        .profile {
+
+            table {
+                margin-top: 21px;
+                max-width: 100%;
+                min-width: min(100%, 400px);
+
+                td {
+                    padding: 8px;
+                }
+            }
+
+            input {
+                width: 100%;
+            }
+
+            .pencil {
+                width: 23px;
+                height: 23px;
+            }
+        }
+
+
+        .audio {
+            .volume {
+                margin-top: 8px;
+
+                .number {
+                    width: 50px;
+                    display: inline-block;
+                    text-align: center;
+                }
+
+                .seekbar-container {
+                    display: inline-block;
+                    width: 200px; //Not necessary, but for to be sure!
+
+                    .seekbar {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .change-name, .change-email, .change-password {
+        margin: 0 auto;
+
+        .body {
+            text-align: center;
+
+            .hint, .notice {
+                text-align: center;
+            }
+
+            input {
+                margin: 0 13px;
+            }
+        }
+
+        .btn-container {
+            margin-top: 80px;
+        }
+    }
+
+    .change-email {
+
+        .body {
+
+            input {
+                width: 250px;
+            }
+        }
+    }
+
+    .change-password {
+
+        .my-table {
+            margin: 0 auto;
+            max-width: 100%;
+            width: min(100%, 400px);
+            vertical-align: middle;
+
+            tr {
+
+                td {
+                    vertical-align: middle;
+                    text-align: center;
+
+                    input {
+                        width: min(100%, 220px);
+                        height: 55px;
+                    }
+
+
+                    .svg {
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+
+                .eye-td {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

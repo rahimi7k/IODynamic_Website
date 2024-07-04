@@ -1,0 +1,822 @@
+﻿<div class="api-page {{direction}}">
+
+	<nb-card class="page-container">
+
+		<nb-card-header class="page-header">
+			<img src="assets/svg/api_monitor.svg" class="page-header-image" /><h6 class="page-header-title">{{language.Api_Title}}</h6>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Introduce_Text1}}
+			{{language.Api_Introduce_Text2}}
+			<br />
+			<br />
+
+			{{language.Api_Introduce_Text3}}
+			<br />
+			<br />
+			<br />
+
+			<strong>
+				{{language.Description}}
+			</strong>
+			<br />
+
+			{{language.Api_Introduce_Text4}} &nbsp;&nbsp;{{language.Api_Introduce_Text_Link}}
+
+			<div class="box">
+				{{language.Api_Introduce_Text_SSL}}
+			</div>
+			<div class="box">
+				{{language.Api_Introduce_Text_Session}}
+			</div>
+
+
+			<br />
+			<strong>
+				{{language.Api_Introduce_Response_Title}}
+			</strong>
+			<br />
+			{{language.Api_Introduce_Response_Text}}
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>status</th>
+					<th>{{language.Api_Introduce_Response_Table_Status}}</th>
+				</tr>
+				<tr>
+					<th>description</th>
+					<th>{{language.Api_Introduce_Response_Table_Description}}</th>
+				</tr>
+			</table>
+
+
+			<br />
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Introduce_Response_Description}}
+			</strong>
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Error}}</th>
+						<th>{{language.Description}}</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>CREDIT_LIMIT</th>
+					<th>{{language.Api_Introduce_Response_Error_CREDIT_LIMIT}}</th>
+				</tr>
+				<tr>
+					<th>INVALID_PARAMETERS</th>
+					<th>{{language.Api_Introduce_Response_Error_INVALID_PARAMETERS}}</th>
+				</tr>
+				<tr>
+					<th>METHOD_NOT_FOUND</th>
+					<th>{{language.Api_Introduce_Response_Error_METHOD_NOT_FOUND}}</th>
+				</tr>
+				<tr>
+					<th>INVALID_REQUEST_METHOD</th>
+					<th>{{language.Api_Introduce_Response_Error_INVALID_REQUEST_METHOD}}</th>
+				<tr>
+					<th>TOO_MANY_REQUEST</th>
+					<th>{{language.Api_Introduce_Response_Error_TOO_MANY_REQUEST}}</th>
+				</tr>
+				<tr>
+					<th>UNAUTHORIZED</th>
+					<th>{{language.Api_Introduce_Response_Error_UNAUTHORIZED}}</th>
+				</tr>
+				<tr>
+					<th>USER_BLOCK</th>
+					<th>{{language.Api_Introduce_Response_Error_USER_BLOCK}}</th>
+				</tr>
+			</table>
+
+			<br />
+
+			<div class="box box-warning">
+				{{language.Api_Introduce_Error_Abuse}}
+			</div>
+			<br />
+			<br />
+
+			<!--
+			 <div class="loader">
+				<div class="l_main">
+					<div class="l_square"><span></span><span></span><span></span></div>
+					<div class="l_square"><span></span><span></span><span></span></div>
+					<div class="l_square"><span></span><span></span><span></span></div>
+					<div class="l_square"><span></span><span></span><span></span></div>
+				</div>
+			</div>
+			-->
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/images/ic_coin.png" />
+				<h6 class="page-header-title">
+					{{language.Api_Get_Credit_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: GET
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Get_Credit_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/get_credit
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseGetCredit}}
+				</code>
+			</div>
+			{{language.Api_Coin_Description}}
+
+
+
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/svg/add_user.svg" />
+				<h6 class="page-header-title">
+					{{language.Api_Order_Member_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: POST
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Order_Member_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/order_member
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>application</th>
+					<th>{{language.Api_App_Name_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>username</th>
+					<th>{{language.Api_Username_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>count</th>
+					<th>{{language.Api_Count_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>user_id</th>
+					<th>{{language.Api_UserId_Description}}</th>
+					<th>Int64</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseOrderMember}}
+				</code>
+			</div>
+			{{language.Api_Coin_Description}} {{language.AND}}
+			{{language.Api_Order_Count_Description}}.
+
+
+
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/svg/love.svg" />
+				<h6 class="page-header-title">
+					{{language.Api_Order_Like_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: POST
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Order_Like_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/order_like
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>application</th>
+					<th>{{language.Api_App_Name_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>username</th>
+					<th>{{language.Api_Username_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>post_id</th>
+					<th>{{language.Api_PostId_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>count</th>
+					<th>{{language.Api_Count_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>user_id</th>
+					<th>{{language.Api_UserId_Description}}</th>
+					<th>Int64</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseOrderMember}}
+				</code>
+			</div>
+			{{language.Api_Coin_Description}}&nbsp;{{language.AND}}&nbsp;
+			{{language.Api_Order_Count_Description}}.
+
+
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/svg/post.svg" />
+				<h6 class="page-header-title">
+					{{language.Api_Order_Comment_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: POST
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Order_Comment_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/order_comment
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>application</th>
+					<th>{{language.Api_App_Name_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>username</th>
+					<th>{{language.Api_Username_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>post_id</th>
+					<th>{{language.Api_PostId_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>comments</th>
+					<th>{{language.Api_Order_Comment_List_Description}}</th>
+					<th>JSON Array</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>user_id</th>
+					<th>{{language.Api_UserId_Description}}</th>
+					<th>Int64</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Order_Comment_List_Description_Example_Title}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{commentList}}
+				</code>
+			</div>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseOrderMember}}
+				</code>
+			</div>
+			{{language.Api_Coin_Description}}&nbsp;{{language.AND}}&nbsp;
+			{{language.Api_Order_Count_Description}}.
+
+
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/svg/chart.svg" />
+				<h6 class="page-header-title">
+					{{language.Api_Get_Order_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: GET
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Get_Order_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/get_order
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>application</th>
+					<th>{{language.Api_App_Name_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>username</th>
+					<th>{{language.Api_Username_Optional}}</th>
+					<th>String</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+				<tr>
+					<th>post_id</th>
+					<th>{{language.Api_PostId_Optional}}</th>
+					<th>String</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+				<tr>
+					<th>type</th>
+					<th>{{language.Api_Cancel_Type_Description}}</th>
+					<th>Int</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseGetOrder}}
+				</code>
+			</div>
+
+
+			<br />
+			<strong>
+				{{language.Api_Parameters_Received}}
+			</strong>
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>order_count</th>
+					<th>{{language.Api_Parameters_Order_Count_Description}}</th>
+				</tr>
+				<tr>
+					<th>remaining</th>
+					<th>{{language.Api_Parameters_Remaining_Description}}</th>
+				</tr>
+				<tr>
+					<th>error</th>
+					<th>{{language.Api_Parameters_Error_Description}}</th>
+				</tr>
+			</table>
+
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Parameters_Error_Description_Title}}
+			</strong>
+			<br />
+			{{language.Api_Parameters_Error_Description_Text}}
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Error}}</th>
+						<th>{{language.Description}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>ORDER_NOT_FOUND</th>
+					<th>{{language.Api_Introduce_Response_Error_ORDER_NOT_FOUND}}</th>
+				</tr>
+				<tr>
+					<th>USER_PRIVATE</th>
+					<th>{{language.Api_Parameters_Error_USER_PRIVATE_Description}}</th>
+				</tr>
+				<tr>
+					<th>USER_NOT_FOUND</th>
+					<th>{{language.Api_Parameters_Error_USER_NOT_FOUND_Description}}</th>
+				</tr>
+				<tr>
+					<th>MEDIA_NOT_FOUND</th>
+					<th>{{language.Api_Parameters_Error_MEDIA_NOT_FOUND_Description}}</th>
+				</tr>
+				<tr>
+					<th>COMMENTS_DISABLED</th>
+					<th>{{language.Api_Parameters_Error_COMMENTS_DISABLED_Description}}</th>
+				</tr>
+				<tr>
+					<th>COMMENTS_DISABLED_FOR_VIEWER</th>
+					<th>{{language.Api_Parameters_Error_COMMENTS_DISABLED_FOR_VIEWER_Description}}</th>
+				</tr>
+				<tr>
+					<th>REPORT</th>
+					<th>{{language.Api_Parameters_Error_REPORT_Description}}</th>
+				</tr>
+			</table>
+
+
+		</nb-card-body>
+	</nb-card>
+
+	<br />
+	<br />
+
+	<nb-card class="content-container">
+		<nb-card-header class="content-header">
+			<div>
+				<img src="assets/svg/rubbish.svg" />
+				<h6 class="page-header-title">
+					{{language.Api_Cancel_Order_Title}}
+				</h6>
+			</div>
+
+			<div>
+				{{language.Api_Request_Type}}: POST
+			</div>
+		</nb-card-header>
+
+		<nb-card-body class="page">
+
+			{{language.Api_Cancel_Order_Text}}
+
+			<br />
+			<br />
+			<strong>
+				{{language.Api_Url_Structure}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				https://api.iodynamic.com/cancel_order
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters}}
+			</strong>
+
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+						<th>{{language.Type}}</th>
+						<th>{{language.Type}}</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<th>application</th>
+					<th>{{language.Api_App_Name_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>session</th>
+					<th>{{language.Api_Session_Description}}</th>
+					<th>String</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>type</th>
+					<th>{{language.Api_Cancel_Type_Description}}</th>
+					<th>Int</th>
+					<th>{{language.Mandatory}}</th>
+				</tr>
+				<tr>
+					<th>username</th>
+					<th>{{language.Api_Username_Optional}}</th>
+					<th>String</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+				<tr>
+					<th>post_id</th>
+					<th>{{language.Api_PostId_Optional}}</th>
+					<th>String</th>
+					<th>{{language.Optional}}</th>
+				</tr>
+			</table>
+
+			<br />
+			<br />
+			<strong>
+				{{language.Response}}
+			</strong>
+			<br />
+			<div class="box ltr">
+				<code>
+					{{responseCancelOrder}}
+				</code>
+			</div>
+
+			<br />
+			<strong>
+				{{language.Api_Parameters_Received}}
+			</strong>
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>{{language.Parameter}}</th>
+						<th>{{language.Description}}</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>coin</th>
+					<th>{{language.Api_Coin_Description}}</th>
+				</tr>
+				<tr>
+					<th>order_count</th>
+					<th>{{language.Api_Parameters_Order_Count_Description}}</th>
+				</tr>
+				<tr>
+					<th>remaining</th>
+					<th>{{language.Api_Parameters_Remaining_Description}}</th>
+				</tr>
+			</table>
+
+
+		</nb-card-body>
+	</nb-card>
+
+
+
+
+
+
+</div>

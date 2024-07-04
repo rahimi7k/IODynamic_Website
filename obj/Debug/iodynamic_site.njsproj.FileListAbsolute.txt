@@ -1,0 +1,3 @@
+D:\Work\Web_WorkSpace\iodynamic_site\obj\Debug\iodynamic_site.njsproj.AssemblyReference.cache
+D:\Work\Web_WorkSpace\iodynamic_site\obj\Debug\iodynamic_site.njsproj.CoreCompileInputs.cache
+D:\Work\Web_WorkSpace\iodynamic_site\bin\Microsoft.NodejsTools.WebRole.dll

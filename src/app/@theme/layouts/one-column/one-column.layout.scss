@@ -1,0 +1,36 @@
+@import '../../styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .menu-sidebar ::ng-deep .scrollable {
+    padding-top: nb-theme(layout-padding-top);
+  }
+
+  .menu-sidebar {
+    transition-property: all;
+    transition-duration: 0.20s;
+  }
+  /*menu-item {
+      border-bottom: 1px solid #edf1f7;
+    }*/
+  .expanded {
+    // transition-property: all;
+    // transition-duration: 0.28s;
+    // opacity: 1;
+    // border-bottom: none;
+    /*
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    */
+  }
+
+  .collapsed {
+    // transition-property: all;
+    // transition-duration: 0.28s;
+    // opacity: 0;
+  }
+}

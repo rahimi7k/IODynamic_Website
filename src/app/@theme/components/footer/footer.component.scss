@@ -1,0 +1,91 @@
+@import '../../styles/themes';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@include nb-install-component() {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .footer-page {
+        .row {
+            width: 100%;
+
+            .links {
+                text-align: left;
+                direction: ltr;
+                float: left;
+                margin: 10px 0 0 0;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    margin: 3px 15px 10px 15px;
+                    color: #8993a6;
+                    font-size: 16px;
+                    white-space: nowrap;
+                    cursor: pointer;
+                }
+            }
+
+            .socials {
+                text-align: right;
+                direction: rtl;
+                float: right;
+                padding: 0;
+                margin: 10px 0 0 0;
+
+                a {
+                    width: 64px;
+                    height: 64px;
+                    color: nb-theme(text-hint-color);
+                    transition: color ease-out 0.5s;
+                    margin: 0 5px;
+
+                    &:hover {
+                        color: nb-theme(text-basic-color);
+                    }
+                }
+
+                img {
+                    width: 30px;
+                    filter: opacity(70%);
+                }
+
+                img:hover {
+                    filter: opacity(100%);
+                }
+            }
+
+            @include media-breakpoint-down(is) {
+                .socials {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .copyright_Container {
+            margin-top: 1px;
+
+            .logo {
+                text-align: center;
+
+                .iodynamic_logo {
+                    width: 200px;
+                }
+            }
+
+            .copyright {
+                text-align: center;
+                margin-bottom: 0;
+                display: block;
+            }
+
+            .copyright-first {
+                margin: 10px 0 0;
+            }
+        }
+    }
+}

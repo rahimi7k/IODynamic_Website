@@ -1,0 +1,145 @@
+
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes';
+
+//writen in library
+/*
+$nb-themes: nb-register-theme((
+  font-family-primary: var(--global-font),
+  layout-padding-top: 13px,
+  menu-item-icon-margin: 0 0.5rem 0 0,
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  table-odd-background-color: rgba(0, 0, 0, 0.05),
+  input-backgruond-color: #ffffff,
+  input-backgruond-color-hover: #fdfdfd,
+  input-backgruond-color-active: #f6f6f6,
+  input-backgruond-color-disabled: #f7f7f7,
+  input-border-color: #e4e4e4,
+  input-border-color-hover: #cacaca,
+  input-border-color-active: #a2a1a1,
+  hover-color: #f8f8f8,
+  hr-menu-color: #edf1f7,
+
+  button-background-color: #2595ec,
+  button-shadow-color: #007cb6,
+  button-text-color: #f9f9f9,
+  button-background-color-hover: #1086e2,
+  button-background-color-active: #007ada,
+
+  button-danger-background-color: #ee2a58,
+  button-danger-shadow-color: #e73861,
+  button-danger-background-color-hover: #e9073d,
+  button-danger-background-color-active: #d20032,
+
+  radio-background-color: #f4f4f4,
+  radio-selected-color: #3197EE,
+  radio-border: #01667c,
+
+  toast-background-color: #2595ec,
+  toast-text-color: #f9f9f9,
+  toast-shadow-color: #1086e2,
+
+), default, default);
+*/
+
+/*
+$nb-themes: nb-register-theme((
+  font-family-primary: var(--global-font),
+  layout-padding-top: 13px,
+  menu-item-icon-margin: 0 0.5rem 0 0,
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  table-odd-background-color: rgba(0, 0, 0, 0.13),
+  input-backgruond-color: #1f263e,
+  input-backgruond-color-hover: #1a223d,
+  input-backgruond-color-active: #151a30,
+  input-backgruond-color-disabled: #161b2c,
+  input-border-color: #060c1e,
+  input-border-color-hover: #13192b,
+  input-border-color-active: #00040d,
+  hover-color: #1f263e,
+  hr-menu-color: #151a30,
+
+  button-background-color: #3663e2,
+  button-shadow-color: #194ce0,
+  button-text-color: #e1e1e1,
+  button-background-color-hover: #2c59db,
+  button-background-color-active: #214ecd,
+
+  radio-background-color: #435d97,
+  radio-selected-color: #3197EE,
+  radio-border: #00127d,
+
+  toast-background-color: #3663e2,
+  toast-text-color: #e1e1e1,
+  toast-shadow-color: #194ce0,
+
+  button-danger-background-color: #ee2a58,
+  button-danger-shadow-color: #e73861,
+  button-danger-background-color-hover: #e9073d,
+  button-danger-background-color-active: #d20032,
+
+), dark, dark);
+*/
+
+/*
+$nb-themes: nb-register-theme((
+  font-family-primary: var(--global-font),
+  layout-padding-top: 13px,
+  menu-item-icon-margin: 0 0.5rem 0 0,
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  table-odd-background-color: rgba(0, 0, 0, 0.13),
+  input-backgruond-color: #1f263e,
+  input-backgruond-color-hover: #1a223d,
+  input-backgruond-color-active: #151a30,
+  input-border-color: #13192a,
+  input-border-color-hover: #13192b,
+  input-border-color-active: #010613,
+  input-backgruond-color-disabled: #171c2e,
+  hover-color: #2e2e51,
+  hr-menu-color: #1b1b38,
+
+  button-background-color: #945eff,
+  button-shadow-color: #8546fd,
+  button-text-color: #f1f1f1,
+  button-background-color-hover: #884bfd,
+  button-background-color-active: #7e3cfc,
+
+  radio-background-color: #4f3484,
+  radio-selected-color: #9066e3,
+  radio-border: #3a01a9,
+
+  toast-background-color: #945eff,
+  toast-text-color: #f1f1f1,
+  toast-shadow-color: #8546fd,
+
+  button-danger-background-color: #ee2a58,
+  button-danger-shadow-color: #e73861,
+  button-danger-background-color-hover: #e9073d,
+  button-danger-background-color-active: #d20032,
+
+), cosmic, cosmic);
+*/

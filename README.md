@@ -1,4 +1,4 @@
-The following application is a website written by Typescript/Scss without utilizing any third-party library. It is released by Webpack which streamlined the process of controlling all aspects of final deployment.
+The following website is written by Typescript/Scss with utilizing Angular framework. It is released by Webpack which streamlined the process of controlling all aspects of final deployment.
 
 <img width="1900" alt="app_desktop" src="https://github.com/rahimi7k/IODynamic_Website/assets/50842032/6d3bdd0f-1da2-4454-a189-a2c1cd555113">
 
